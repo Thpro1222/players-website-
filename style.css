@@ -208,3 +208,30 @@ hr {
         justify-items: center;
     }
 }
+
+/* teblet devises */
+
+@media screen and (min-width:688px) and (max-width:992px) {
+
+
+    .containers {
+        width: 100%;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .courses {
+        justify-items: center;
+    }
+}
