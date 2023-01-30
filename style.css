@@ -176,3 +176,35 @@ hr {
     border-radius: 10px;
     margin-right: 7%;
 }
+
+/*---------------
+          Media Queries
+----------------------- */
+
+/*  ----------------  
+       Mobile device
+--------------- */
+
+@media screen and (max-width:688px) {
+
+    .containers {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses {
+        justify-items: center;
+    }
+}
